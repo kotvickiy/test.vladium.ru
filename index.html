@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+
+<meta charset="UTF-8">
+
+<title> Пример простой страницы html</title>
+<style type="text/css">
+input {
+    display: block;
+    font-size: 18px;
+    padding: 15px;
+    margin-bottom: 10px;
+    outline: none;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+
+}
+</style>
+</head>
+
+<body>
+
+<form>
+    <input type="submit" value="}{OOJAX">
+</form>
+<script type="text/javascript">
+    let btn = document.querySelector('input[type=submit');
+    btn.addEventListener('click', async function(event){
+        event.preventDefault();
+        let body = document.querySelector('body');
+        body.style.backgroundColor = "white";
+            body.style.display = "block";
+            body.style.padding = "8px";
+            body.innerHTML = "<h2>AJAX</h2>"
+    })
+</script>
+</body>
+
+</html>
+
